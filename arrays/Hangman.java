@@ -7,7 +7,7 @@ public class Hangman {
 	public static String playHangman() {
 		
 		Scanner kb=new Scanner(System.in);
-		String words[]={"apple","ball","cat","doll","elephant","farmer","gesture","clone"};
+		String words[]={"apple","mississippi","eleven","elephant","fill","umbrella"};
 		String toGuess=words[new Random().nextInt(5)];
 		
 		int len=toGuess.length(),n=len;
@@ -53,6 +53,7 @@ public class Hangman {
 	public static void main(String[] args) {
 		
 		while( playHangman().equals("again") ) ;
+		
 		System.out.println("Thank you for playing.");
 	}
 	
